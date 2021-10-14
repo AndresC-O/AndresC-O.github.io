@@ -35,6 +35,11 @@ body{
     position: relative;
 }
 
+.gitclick{
+    color: #fff;
+    text-decoration: none;
+}
+
 .hero .container{
     padding: 0;
 }
@@ -171,10 +176,9 @@ body{
 
 .projects__grid{
     display: grid;
-    height: 1000px;
+    height: 450px;
     grid-template-areas: 
-    "img2 img2 img1 img3"
-    "img2 img2 img4 img5";
+    "img1 img2 img3";
     gap: 10px;
 }
 
@@ -200,12 +204,6 @@ body{
 }
 .projects__item:nth-of-type(3){
     grid-area: img3;
-}
-.projects__item:nth-of-type(4){
-    grid-area: img4;
-}
-.projects__item:nth-of-type(5){
-    grid-area: img5;
 }
 
 .projects__hover{
@@ -238,7 +236,8 @@ body{
 .testimony__grid{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* Add other "1fr" if there are more than one */
+    grid-template-columns: 1fr;
     gap: 30px;
 }
 
@@ -390,8 +389,7 @@ body{
     .projects__grid{
         grid-template-areas: 
         "img2 img2 img1 img1"
-        "img2 img2 img3 img3"
-        "img4 img4 img5 img5";
+        "img2 img2 img3 img3";
     }
 
     /* Testimony */
@@ -463,9 +461,7 @@ body{
         grid-template-areas: 
         "img1"
         "img2"
-        "img3"
-        "img4"
-        "img5";
+        "img3";
         height: auto;
         grid-template-rows: repeat(5, 250px);
         grid-auto-rows: 250px;
