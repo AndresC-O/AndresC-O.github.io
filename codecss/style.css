@@ -463,7 +463,7 @@ body{
         "img2"
         "img3";
         height: auto;
-        grid-template-rows: repeat(5, 250px);
+        grid-template-rows: repeat(3, 250px); /*El número 3, se cambia por el número de imagenes */
         grid-auto-rows: 250px;
         gap: 10px;
     }
